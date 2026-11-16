@@ -281,10 +281,6 @@ a:hover {
     width: 300px; 
     aspect-ratio: 1;
     
-    
-        border-radius: 50%;
-    
-    
 }
 
 #bio {
@@ -576,98 +572,31 @@ pre {
 <main>
     
     
-    <nav class="languages links">
-        <ul>
-        
-        <li>
-            <a href="/jp/">日本語</a>
-        </li>
-        
-        </ul>
-    </nav>
-    
     <div id="content">
     <aside id="sidebar">
         <div id="avatar">
-            
-            <img class="flower" src="/icon.png">
             
         </div>
         
         <div id="bio">
         
-            <p>你好，我是曉雲Shizukumo，一名2026年底才開始起步的創作者。
-我喜歡繪畫，也喜歡深入探討內心世界，希望能夠藉由自身經驗，鼓勵同樣煩惱著的人們。</p>
-<p>希望我們能夠一起在這個紛擾世界中，長出自己的力量，心安理得地活下去。</p>
-
-        
         </div>
         
         <div class="small-box">
             
-                <ul>
-<li>名字: 曉雲Shizukumo</li>
-</ul>
-
-            
             </ul>
         </div>
 
         
-        <div>
-            <div class="tags">
-                <p class="tags">Tags</p>
-            </div>
-
-            <ul class="tags">
-            
-            
-            
-            
-            </ul>
-            
-        
         
         <nav class="links">
             <ul>
-            
-            
-                <li><a href="https://www.youtube.com/@shizukumo_art">曉雲ㄉYoutube</a></li>
-            
-                <li><a href="pending">pending</a></li>
-            
             
             </ul>
         </nav>
     </aside>
     <main>
         <article id="top" class="clearfix">
-            
-            <section>
-            <div class="img-right">
-                <img src="/%e9%96%89%e7%9c%bc.png">
-            </div>
-            <div>
-            <h1>Welcome to my blog!</h1>
-            
-                <p>放置各種創作物的集散地</p>
-            
-                <p>作品介紹/創作心路歷程/社會觀察與心情</p>
-            
-            </div>
-            </section>
-            <section>
-            <h4>我的興趣</h4>
-                <ul>
-                
-                    <li>圖文創作、手繪(原子筆畫、禪繞畫)</li>
-                
-                    <li>短篇動畫製作</li>
-                
-                    <li>逛書店、散步</li>
-                
-                </ul>
-            </section>
             
         </article>
     
@@ -697,11 +626,11 @@ pre {
         if (fullContent.style.display === "none") {
             textContent.style.display = "none";
             fullContent.style.display = "inline";
-            btnText.innerHTML = "read less";
+            btnText.innerHTML =  null ;
         } else {
             textContent.style.display = "inline";
             fullContent.style.display = "none";
-            btnText.innerHTML = "read more";
+            btnText.innerHTML =  null ;
         }
     }
 

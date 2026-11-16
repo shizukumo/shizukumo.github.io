@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-		<sitemap>
-			<loc>https://shizukumo.github.io/en/sitemap.xml</loc>
-			
-		</sitemap>
-	
-		<sitemap>
-			<loc>https://shizukumo.github.io/jp/sitemap.xml</loc>
-			
-				<lastmod>2025-02-01T10:00:00-03:00</lastmod>
-			
-		</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://shizukumo.github.io/categories/</loc>
+  </url><url>
+    <loc>https://shizukumo.github.io/tags/</loc>
+  </url><url>
+    <loc>https://shizukumo.github.io/zh/</loc>
+  </url><url>
+    <loc>https://shizukumo.github.io/</loc>
+  </url>
+</urlset>
