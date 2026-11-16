@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <title>meow | 曉雲ㄉ避風港!!</title>
+    <title>test2 | 曉雲ㄉ避風港!!</title>
     <link rel="canonical" href="https://shizukumo.github.io/">
     
     
     <link rel="icon" href="/favicon.ico">
     
     
-    <meta name="description" content="">
+    <meta name="description" content="111111111111111111111111111111">
     
+    
+    <meta name="keywords" content="創作, 心情">
     
     
     <style>
@@ -23,21 +25,21 @@
 
 
 :root {
-    --site-bg: url("/flowertile.png");
-    --accent-color: #f55cc0;
-    --select-color: #ffc1e9;
-    --link-color: #5083C1;
-    --bg-color: #CEEAFF;
-    --text-color: #191919;
-    --bg-color2: white;
-    --border-color: #215697;
-    --special-text-color: #215697;
-    --post-header-color: white;
-    --post-shadow-color: #21569760;
-    --outline-color: #6EAAD6;
-    --outline-color2: #CEEAFF;
-    --list-style-type: "";
-    --list-style-image: url("/flower.png");
+    --site-bg: url("");
+    --accent-color: #C87D4B;
+    --select-color: #E8D0B3;
+    --link-color: #8C5327;
+    --bg-color: #FFF5E6;
+    --text-color: #1A1A1A;
+    --bg-color2: #FAF0E1;
+    --border-color: #6B4423;
+    --special-text-color: #1A1A1A;
+    --post-header-color: #F3E2C7;
+    --post-shadow-color: #6B442333;
+    --outline-color: #B5895A;
+    --outline-color2: #E6D2B5;
+    --list-style-type: "• ";
+    --list-style-image: url("");
 }
 
 * {
@@ -188,7 +190,7 @@ li.page-item:not(.disabled):not(.active) a:hover{
 
 li {
     
-        list-style-image: var(--list-style-image);
+        list-style-type: var(--list-style-type);
     
 }
 
@@ -574,27 +576,46 @@ pre {
         <header><h1 id="曉雲ㄉ避風港!!"><a href="https://shizukumo.github.io/">曉雲ㄉ避風港!!</a></h1></header>
 <main>
     
-<article style="padding-left: 2rem;">
-    <h2>meow</h2>
-    <ul>
+<div id="single-post">
+
+    <article>
+        <h2>test2</h2>
         
-        <li class="tag-item">
-            <a href="/posts/mysterious-meow/">mysterious meow</a>
-            <p> > meow meow&hellip; meow rawr, meow meow meow!
-rawr rawr meow, meow meow rawr, rawr meow meow. meow rawr meow meow, rawr rawr rawr meow rawr, rawr meow meow. meow rawr, meow rawr meow!
-</p>
-        </li>
+        tags:
         
-        <li class="tag-item">
-            <a href="/posts/friends/">friends!!</a>
-            <p> > meow rawr meow meow, rawr!
-rawr meow, meow rawr rawr meow meow, rawr meow meow rawr! rawr meow meow rawr, rawr meow meow meow rawr!
-</p>
-        </li>
+        <a href="/tags/%e5%89%b5%e4%bd%9c">創作</a>,
         
-    </ul>
-    <p style="margin-top: 2.5rem;"><a href="/tags">all tags</a></p>
-</article>
+        <a href="/tags/%e5%bf%83%e6%83%85">心情</a>
+        
+        <div class="post-header">
+        @ <span class="timestamp">16/11/2026</span>
+        </div>
+        <p><p>111111111111111111111111111111</p></p>
+        
+        <div class="auto-numbering" id="full-content"></div>
+        
+    </article>
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+</div>
 
     
 </main>
