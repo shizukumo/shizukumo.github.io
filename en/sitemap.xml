@@ -2,19 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shizukumo.github.io/categories/</loc>
+    <loc>https://shizukumo.github.io/posts/hello/</loc>
+    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
+  </url><url>
+    <loc>https://shizukumo.github.io/posts/</loc>
+    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://shizukumo.github.io/categories/"
+                href="https://shizukumo.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/categories/"
+                href="https://shizukumo.github.io/jp/posts/"
+                />
+  </url><url>
+    <loc>https://shizukumo.github.io/</loc>
+    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/"
+                />
+  </url><url>
+    <loc>https://shizukumo.github.io/tags/meow/</loc>
+    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
+  </url><url>
+    <loc>https://shizukumo.github.io/posts/mysterious-meow/</loc>
+    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/posts/mysterious-meow/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/posts/mysterious-meow/"
                 />
   </url><url>
     <loc>https://shizukumo.github.io/tags/</loc>
+    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -26,16 +60,32 @@
                 href="https://shizukumo.github.io/jp/tags/"
                 />
   </url><url>
-    <loc>https://shizukumo.github.io/</loc>
+    <loc>https://shizukumo.github.io/posts/friends/</loc>
+    <lastmod>2025-01-29T21:05:11-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://shizukumo.github.io/"
+                href="https://shizukumo.github.io/posts/friends/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/"
+                href="https://shizukumo.github.io/jp/posts/friends/"
+                />
+  </url><url>
+    <loc>https://shizukumo.github.io/tags/rawr/</loc>
+    <lastmod>2025-01-29T21:05:11-03:00</lastmod>
+  </url><url>
+    <loc>https://shizukumo.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/categories/"
                 />
   </url>
 </urlset>
