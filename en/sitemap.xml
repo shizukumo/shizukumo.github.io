@@ -2,35 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shizukumo.github.io/posts/hello/</loc>
-    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
-  </url><url>
-    <loc>https://shizukumo.github.io/posts/</loc>
-    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://shizukumo.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/posts/"
-                />
-  </url><url>
-    <loc>https://shizukumo.github.io/</loc>
-    <lastmod>2026-11-16T16:35:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://shizukumo.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/"
-                />
-  </url><url>
     <loc>https://shizukumo.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -43,6 +14,18 @@
                 href="https://shizukumo.github.io/jp/categories/"
                 />
   </url><url>
+    <loc>https://shizukumo.github.io/posts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/posts/"
+                />
+  </url><url>
     <loc>https://shizukumo.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -53,6 +36,18 @@
                 rel="alternate"
                 hreflang="ja-jp"
                 href="https://shizukumo.github.io/jp/tags/"
+                />
+  </url><url>
+    <loc>https://shizukumo.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/"
                 />
   </url>
 </urlset>
