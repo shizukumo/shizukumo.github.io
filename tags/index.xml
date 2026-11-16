@@ -10,22 +10,6 @@
 		
 		
 		
-			<lastBuildDate>Sat, 01 Feb 2025 10:00:00 -0300</lastBuildDate>
-		
 			<atom:link href="https://shizukumo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>meow</title>
-				<link>https://shizukumo.github.io/tags/meow/</link>
-				<pubDate>Sat, 01 Feb 2025 10:00:00 -0300</pubDate>
-				<guid>https://shizukumo.github.io/tags/meow/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>rawr</title>
-				<link>https://shizukumo.github.io/tags/rawr/</link>
-				<pubDate>Wed, 29 Jan 2025 21:05:11 -0300</pubDate>
-				<guid>https://shizukumo.github.io/tags/rawr/</guid>
-				<description></description>
-			</item>
 	</channel>
 </rss>

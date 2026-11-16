@@ -18,21 +18,7 @@
 				<link>https://shizukumo.github.io/posts/hello/</link>
 				<pubDate>Mon, 16 Nov 2026 16:35:50 +0800</pubDate>
 				<guid>https://shizukumo.github.io/posts/hello/</guid>
-				<description>&lt;p&gt;test hiiiiiiiiiiiiiii&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>mysterious meow</title>
-				<link>https://shizukumo.github.io/posts/mysterious-meow/</link>
-				<pubDate>Sat, 01 Feb 2025 10:00:00 -0300</pubDate>
-				<guid>https://shizukumo.github.io/posts/mysterious-meow/</guid>
-				<description>&lt;h2 id=&#34;meow&#34;&gt;meow&lt;/h2&gt;&#xA;&lt;p&gt;meow&amp;hellip; meow rawr, meow meow meow!&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>friends!!</title>
-				<link>https://shizukumo.github.io/posts/friends/</link>
-				<pubDate>Wed, 29 Jan 2025 21:05:11 -0300</pubDate>
-				<guid>https://shizukumo.github.io/posts/friends/</guid>
-				<description>&lt;p&gt;meow rawr meow meow, rawr!&lt;/p&gt;</description>
+				<description>&lt;p&gt;test hiiiiiiiiiiiiiii&#xA;/images/pic1.png&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

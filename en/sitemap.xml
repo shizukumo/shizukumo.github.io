@@ -31,51 +31,6 @@
                 href="https://shizukumo.github.io/jp/"
                 />
   </url><url>
-    <loc>https://shizukumo.github.io/tags/meow/</loc>
-    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
-  </url><url>
-    <loc>https://shizukumo.github.io/posts/mysterious-meow/</loc>
-    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://shizukumo.github.io/posts/mysterious-meow/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/posts/mysterious-meow/"
-                />
-  </url><url>
-    <loc>https://shizukumo.github.io/tags/</loc>
-    <lastmod>2025-02-01T10:00:00-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://shizukumo.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/tags/"
-                />
-  </url><url>
-    <loc>https://shizukumo.github.io/posts/friends/</loc>
-    <lastmod>2025-01-29T21:05:11-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://shizukumo.github.io/posts/friends/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://shizukumo.github.io/jp/posts/friends/"
-                />
-  </url><url>
-    <loc>https://shizukumo.github.io/tags/rawr/</loc>
-    <lastmod>2025-01-29T21:05:11-03:00</lastmod>
-  </url><url>
     <loc>https://shizukumo.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -86,6 +41,18 @@
                 rel="alternate"
                 hreflang="ja-jp"
                 href="https://shizukumo.github.io/jp/categories/"
+                />
+  </url><url>
+    <loc>https://shizukumo.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://shizukumo.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://shizukumo.github.io/jp/tags/"
                 />
   </url>
 </urlset>
