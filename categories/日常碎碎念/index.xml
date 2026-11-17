@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>日常碎碎念 on 曉雲ㄉ避風港</title>
+		<link>https://shizukumo.github.io/categories/%E6%97%A5%E5%B8%B8%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+		<description>Recent content in 日常碎碎念 on 曉雲ㄉ避風港</description>
+		<generator>Hugo</generator>
+		<language>zh-tw</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 16 Nov 2026 21:27:00 +0800</lastBuildDate>
+		
+			<atom:link href="https://shizukumo.github.io/categories/%E6%97%A5%E5%B8%B8%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>test</title>
+				<link>https://shizukumo.github.io/posts/my-first-post/</link>
+				<pubDate>Mon, 16 Nov 2026 21:27:00 +0800</pubDate>
+				<guid>https://shizukumo.github.io/posts/my-first-post/</guid>
+				<description>&lt;p&gt;test hiiiiiiiiiiiiiiiiiiii&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-tw"
+  x-data
+  :class="{ dark: $store.darkMode.isDark(), light: !$store.darkMode.isDark() }"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | 曉雲ㄉ避風港</title>
+
+    
+    
+
+
+
+<link rel="canonical" href="https://shizukumo.github.io/search/" />
+
+
+<meta name="robots" content="noindex" />
+
+
+
+
+<meta name="author" content="曉雲Shizukumo" />
+
+<meta name="description" content="放置各種創作物的集散地" />
+
+
+
+
+<meta name="generator" content="Hugo 0.170.0">
+
+
+
+
+<meta property="og:url" content="https://shizukumo.github.io/search/">
+	<meta property="og:site_name" content="曉雲ㄉ避風港">
+	<meta property="og:title" content="搜尋">
+	<meta property="og:description" content="放置各種創作物的集散地">
+	<meta property="og:locale" content="zh_tw">
+	<meta property="og:type" content="website">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="搜尋">
+	<meta name="twitter:description" content="放置各種創作物的集散地">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+     
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script>
+      window.lightTheme = 'retro'
+      window.darkTheme = 'forest'
+
+      ;(function() {
+        const isDark = ('hugo-theme-dream-is-dark' in localStorage)
+          ? window.localStorage.getItem('hugo-theme-dream-is-dark') === 'y'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = isDark ? window.darkTheme : window.lightTheme
+
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.classList.add(isDark ? 'dark' : 'light')
+      })()
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.5/dist/cdn.min.js" integrity="sha256-tANunprCL6b2rhuikuAV4fPpyF0Neec+TI65uxObUi4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-2">
+      
+      
+      <button type="button" class="avatar dream-flip-avatar w-12 h-12 shrink-0 rounded-full cursor-pointer"
+        @click="flip = !flip" title="" aria-label="" :aria-pressed="flip">
+      
+        <span class="dream-flip-avatar-face block w-12 h-12 rounded-full overflow-hidden select-none">
+          <img src="/%e5%b0%b7%e5%b0%ac.png" alt="曉雲ㄉ避風港" />
+        </span>
+      
+      </button>
+      
+
+      
+      <div>
+        
+        <a href="/" class="text-lg font-semibold cursor-pointer">
+          曉雲ㄉ避風港
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">只是想心安理得地活著</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+      
+    
+
+    
+      
+    
+      
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-10 shadow-md">
+        
+        
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/about/" title="">
+    <ion-icon name="information-circle"></ion-icon></a>
+</li>
+
+
+
+
+
+        
+        
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://www.youtube.com/@shizukumo_art" target="" title="">
+    
+    <ion-icon name="play"></ion-icon>
+    
+    
+  </a>
+</li>
+
+
+
+
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="">
+    <ion-icon name="grid"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="">
+    <ion-icon name="pricetags"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="">
+    <ion-icon name="archive"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+        
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="">
+    <ion-icon name="search"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+<a class="text-sm font-semibold cursor-pointer hover:underline" href="/about/" title=""></a>
+
+
+
+
+
+      
+      
+
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://www.youtube.com/@shizukumo_art" target="" title="">
+    <ion-icon class="group-hover:text-primary-content" name="play"></ion-icon>
+  </a>
+  
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front" :inert="flip">
+          <div class="container">
+            
+
+
+<div class="mt-8 lg:mt-12 px-4"
+
+x-data="dreamSearch">
+  <label for="search" class="input w-full">
+    <input id="search" name="search" type="text" autofocus class="grow" placeholder="" x-model.debounce="search" />
+    <ion-icon name="search"></ion-icon>
+  </label>
+
+  <div class="mt-8 space-y-4">
+  <template x-for="post in posts">
+    <a class="card bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+      <div class="card-body">
+        <h2 class="card-title" x-text="post.item.title"></h2>
+
+        <div x-html="post.item.description"></div>
+
+        <div class="card-actions justify-between items-center mt-4">
+          <div class="flex items-center">
+            <template x-if="post.item.avatar">
+              <div class="avatar mr-1">
+                <div class="w-8 rounded-full">
+                  <img class="my-0" :src="post.item.avatar" :alt="post.item.author" />
+                </div>
+              </div>
+            </template>
+            <template x-if="!post.item.avatar">
+              <span>@</span>
+            </template>
+
+            <template x-if="post.item.author">
+              <span x-text="post.item.author"></span>
+            </template>
+            <template x-if="!post.item.author">
+              <span>曉雲Shizukumo</span>
+            </template>
+            </span>
+          </div>
+
+          <div class="inline-flex items-center">
+            <ion-icon name="time" class="mr-1"></ion-icon>
+            <span><span x-text="post.item.readingTime"></span></span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </template>
+  </div>
+</div>
+
+
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 曉雲ㄉ避風港</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        
+        <div class="back" inert :inert="!flip" data-nosnippet>
+          <div class="container">
+            
+              <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">關於我</div>
+
+        <div class="prose dark:prose-invert">
+          <p>嗨，我是曉雲，這裡記錄我的創作與日常。</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 曉雲ㄉ避風港</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+  
+
+
+<script id="dream-fuse" type="module" src="https://cdn.jsdelivr.net/npm/fuse.js@7.5.0/dist/fuse.min.mjs" integrity="sha256-WrUk0SSSuyM1aOlgAEbhqqliPTbr5olYkUT33Jsdpvc=" crossorigin="anonymous"></script>
+<script>
+  const fuseScript = document.getElementById('dream-fuse');
+  const fuseReady = new Promise((resolve, reject) => {
+    fuseScript.addEventListener('load', resolve, { once: true });
+    fuseScript.addEventListener('error', () => reject(new Error('Could not load Fuse.js')), { once: true });
+  });
+  const fuseData = [{"author":null,"avatar":null,"categories":["日常碎碎念"],"description":"這是一段簡短的文章摘要或介紹...","readingTime":1,"tags":["創作","心情"],"title":"test","url":"/posts/my-first-post/"}];
+  const fuseOptions = {
+    keys: [
+      { name: "title", weight: 0.6 },
+      { name: "description", weight: 0.4 },
+    ]
+  };
+
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('dreamSearch', () => ({
+      search: '',
+      findPosts: null,
+
+      async init() {
+        await fuseReady;
+        const { default: Fuse } = await import(fuseScript.src);
+        const fuse = new Fuse(fuseData, fuseOptions);
+        this.findPosts = (query) => fuse.search(query);
+      },
+
+      get posts() {
+        return this.search && this.findPosts ? this.findPosts(this.search) : [];
+      },
+    }));
+  });
+</script>
+
+
+
+    
+
+    
+
+    
+      <script src="/js/busuanzi.js"></script>
+    
+      <script src="/js/disable-right-click.js"></script>
+    
+      <script src="/js/theme-color.js"></script>
+    
+
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZE30TGDZY"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GZE30TGDZY');
+        }
+      </script>
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@8.1.0/dist/ionicons/ionicons.esm.js" integrity="sha256-nV54vbcmAakPnygPy6nvhg7LVyKELt7WF3KHWuRBUZo=" crossorigin="anonymous"></script>
+  </body>
+</html>
