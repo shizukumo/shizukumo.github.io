@@ -168,29 +168,32 @@
 
         
         
-
-
-
-
-
-
-
-        
-        
-
-
-
-
-
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="">
+    <ion-icon name="grid"></ion-icon>
+    
+  </a>
+</li>
 
 
         
         
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="">
+    <ion-icon name="pricetags"></ion-icon>
+    
+  </a>
+</li>
 
 
-
-
-
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="">
+    <ion-icon name="archive"></ion-icon>
+    
+  </a>
+</li>
 
 
         
@@ -237,29 +240,23 @@
 
       
       
-
-
-
-
-
-
-
-      
-      
-
-
-
-
-
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
 
 
       
       
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
 
 
-
-
-
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
 
 
       
@@ -514,6 +511,8 @@ x-data="dreamSearch">
 
 
 
+  
+
 
 <script id="dream-fuse" type="module" src="https://cdn.jsdelivr.net/npm/fuse.js@7.5.0/dist/fuse.min.mjs" integrity="sha256-WrUk0SSSuyM1aOlgAEbhqqliPTbr5olYkUT33Jsdpvc=" crossorigin="anonymous"></script>
 <script>
@@ -522,7 +521,7 @@ x-data="dreamSearch">
     fuseScript.addEventListener('load', resolve, { once: true });
     fuseScript.addEventListener('error', () => reject(new Error('Could not load Fuse.js')), { once: true });
   });
-  const fuseData = [];
+  const fuseData = [{"author":null,"avatar":null,"categories":["創作ㄉ心路歷程"],"description":"打招呼、網誌設立原因與接下來的創作計畫","readingTime":1,"tags":["創作","心情"],"title":"《置頂》歡迎來到我的避風港","url":"/posts/top_20261117/"}];
   const fuseOptions = {
     keys: [
       { name: "title", weight: 0.6 },
