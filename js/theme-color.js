@@ -1,10 +1,9 @@
 // ==========================================
-// 專屬暖黃色調、無縫背景與全站互動色票設定檔 (theme-color.js)
-// 採用動態 CSS 注入技術：零延遲、零閃爍、永不被主題預設樣式覆蓋
+// 專屬暖黃色調與色票管理設定檔 (theme-color.js)
 // ==========================================
 
 (function () {
-    // 1. 集中管理你的專屬色票（以後想調色直接改這裡的色碼即可）
+    // 1. 集中管理你的專屬色票
     const colors = {
         light: {
             bg: "#FFF5E6",            // 網頁大背景底色
@@ -15,24 +14,24 @@
             cardHoverBg: "#ec9b19",   // 首頁卡片滑鼠碰過去的奶茶黃色
             cardBorder: "#E6D3B3",    // 文章卡片與膠囊邊框
             text: "#433426",          // 主體文字與圖示平時顏色
-            iconHoverBg: "#E6B83A",   // 按鈕滑鼠碰過去 / 選中時的圓圈底色（溫潤芥末金）
-            iconHoverText: "#FFF9EE"  // 按鈕滑鼠碰過去 / 選中時的圖示顏色（暖象牙白）
+            iconHoverBg: "#E6B83A",   // 按鈕滑鼠碰過去 / 選中時的圓圈底色
+            iconHoverText: "#FFF9EE"  // 按鈕滑鼠碰過去 / 選中時的圖示顏色
         },
         dark: {
-            bg: "#1F1812",            // 夜間深暖木大背景
-            navBg: "#292018",         // 夜間導覽列與膠囊按鈕外框底色
-            titleColor: "#dcb01e",    // 夜間部落格標題色
-            subTitleColor: "#A89680",
-            cardBg: "#2B2118",        // 夜間文章卡片平時底色
-            cardHoverBg: "#382B20",   // 夜間首頁卡片滑鼠碰過去的暖咖啡色
-            cardBorder: "#453628",
-            text: "#E0D4C3",          // 夜間柔和米杏文字
-            iconHoverBg: "#C9962C",   // 夜間按鈕滑鼠碰過去 / 選中時的琥珀棕底色
-            iconHoverText: "#1F1812"
+            bg: "#121212",            // 夜間極黑大背景（沈穩碳黑）
+            navBg: "#2A2A2A",         // 夜間導覽列與膠囊按鈕外框底色（深灰）
+            titleColor: "#FFFFFF",    // 夜間部落格標題色（純白，醒目）
+            subTitleColor: "#ffffff", // 夜間副標題（中灰）
+            cardBg: "#1E1E1E",        // 夜間文章卡片平時底色（深灰黑）
+            cardHoverBg: "#2C2C2C",   // 夜間首頁卡片滑鼠碰過去的底色（稍亮的灰）
+            cardBorder: "#383838",    // 夜間卡片邊框（低調質感灰）
+            text: "#E0E0E0",          // 夜間柔和淺灰文字（不刺眼）
+            iconHoverBg: "#E0E0E0",   // 夜間按鈕滑鼠碰過去 / 選中時的底色（淺灰白）
+            iconHoverText: "#121212"  // 夜間按鈕滑鼠碰過去時的文字/圖示顏色（深黑）
         }
     };
 
-    // 2. 產生最高權重的專屬樣式表
+    // 2. 產生乾淨且高權重的專屬樣式表
     const customCSS = `
         /* === 白天模式 (預設) === */
         html, body, .flip-container, .front, .back {
@@ -56,7 +55,7 @@
             color: ${colors.light.subTitleColor} !important;
         }
 
-        /* 導覽列右上角圖示按鈕（平時與滑鼠碰過去） */
+        /* 導覽列右上角圖示按鈕 */
         nav a.rounded-full, nav button.rounded-full {
             color: ${colors.light.text} !important;
             transition: background-color 0.2s ease, color 0.2s ease !important;
@@ -65,28 +64,8 @@
             background-color: ${colors.light.iconHoverBg} !important;
             color: ${colors.light.iconHoverText} !important;
         }
-        nav a.rounded-full:hover ion-icon, nav button.rounded-full:hover ion-icon {
-            color: ${colors.light.iconHoverText} !important;
-        }
 
-        /* 底部太陽/月亮/電腦切換膠囊按鈕 */
-        footer div.rounded-full {
-            background-color: ${colors.light.navBg} !important;
-            border-color: ${colors.light.cardBorder} !important;
-        }
-        footer div[role="button"] {
-            color: ${colors.light.text} !important;
-            transition: background-color 0.2s ease !important;
-        }
-        footer div[role="button"]:hover:not(.bg-primary) {
-            background-color: ${colors.light.cardHoverBg} !important;
-        }
-        footer div[role="button"].bg-primary {
-            background-color: ${colors.light.iconHoverBg} !important;
-            color: ${colors.light.iconHoverText} !important;
-        }
-
-        /* 首頁文章列表卡片（平時與滑鼠碰過去） */
+        /* 首頁文章列表卡片 */
         article.card {
             background-color: ${colors.light.cardBg} !important;
             border: 1px solid ${colors.light.cardBorder} !important;
@@ -108,6 +87,11 @@
         }
         #dream-single-post-main h1, #dream-single-post-main h2, #dream-single-post-main h3, #dream-single-post-main p {
             color: ${colors.light.text} !important;
+        }
+
+        /* 文章標題獨立色塊（白天模式） */
+        #custom-article-title-box {
+            background-color: rgba(212, 160, 89, 0.3) !important;
         }
 
         /* 文章分類與標籤膠囊（白天模式） */
@@ -159,23 +143,6 @@
             background-color: ${colors.dark.iconHoverBg} !important;
             color: ${colors.dark.iconHoverText} !important;
         }
-        html.dark nav a.rounded-full:hover ion-icon, html.dark nav button.rounded-full:hover ion-icon {
-            color: ${colors.dark.iconHoverText} !important;
-        }
-        html.dark footer div.rounded-full {
-            background-color: ${colors.dark.navBg} !important;
-            border-color: ${colors.dark.cardBorder} !important;
-        }
-        html.dark footer div[role="button"] {
-            color: ${colors.dark.text} !important;
-        }
-        html.dark footer div[role="button"]:hover:not(.bg-primary) {
-            background-color: ${colors.dark.cardHoverBg} !important;
-        }
-        html.dark footer div[role="button"].bg-primary {
-            background-color: ${colors.dark.iconHoverBg} !important;
-            color: ${colors.dark.iconHoverText} !important;
-        }
         html.dark article.card {
             background-color: ${colors.dark.cardBg} !important;
             border: 1px solid ${colors.dark.cardBorder} !important;
@@ -191,6 +158,11 @@
         }
         html.dark #dream-single-post-main h1, html.dark #dream-single-post-main h2, html.dark #dream-single-post-main h3, html.dark #dream-single-post-main p {
             color: ${colors.dark.text} !important;
+        }
+
+        /* 文章標題獨立色塊（夜間模式） */
+        html.dark #custom-article-title-box {
+            background-color: rgb(90, 90, 90) !important;
         }
 
         /* 文章分類與標籤膠囊（夜間模式） */
@@ -217,11 +189,29 @@
         html.dark .custom-tag-badge:hover {
             background-color: ${colors.dark.cardHoverBg} !important;
         }
+
+        /* === 隱藏右下角多餘的系統/電腦圖示 === */
+        footer div.flex.items-center div[role="button"]:last-child,
+        footer .dropdown,
+        footer button[aria-label*="System"] {
+            display: none !important;
+        }
     `;
 
-    // 3. 立即將樣式表寫入網頁（不需等待 DOM 載入，絕不被蓋掉）
+    // 3. 注入樣式表
     const styleTag = document.createElement('style');
     styleTag.id = 'custom-warm-theme-style';
     styleTag.textContent = customCSS;
     document.head.appendChild(styleTag);
+
+    // 4. 自動更新頁尾版權名字
+    document.addEventListener("DOMContentLoaded", function() {
+        const footerParagraphs = document.querySelectorAll("footer p");
+        footerParagraphs.forEach(p => {
+            if (p.textContent.includes("曉雲ㄉ避風港")) {
+                p.textContent = p.textContent.replace("曉雲ㄉ避風港", "曉雲 Shizukumo");
+            }
+        });
+    });
+    
 })();
