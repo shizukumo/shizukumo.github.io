@@ -392,4 +392,15 @@
     } else {
         init();
     }
+// 智慧型網頁標題處理：首頁只顯示站名，文章頁保留文章標題
+    const path = window.location.pathname;
+    if (path === '/' || path === '') {
+        document.title = '曉雲ㄉ避風港';
+    } else {
+        // 如果在其他頁面發現開頭有奇怪的橫槓，自動修掉
+        let currentTitle = document.title.trim();
+        if (currentTitle.startsWith('|')) {
+            document.title = currentTitle.replace('|', '').trim();
+        }
+    }
 })();
