@@ -37,9 +37,9 @@ window.addEventListener('DOMContentLoaded', () => {
     postViews.style.marginLeft = 'auto';
     
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      postViews.innerHTML = '🔥 閱讀次數：(本地測試)';
+      postViews.innerHTML = '閱讀次數：(本地測試)';
     } else {
-      postViews.innerHTML = '🔥 閱讀次數：<span id="busuanzi_value_page_pv">--</span>次';
+      postViews.innerHTML = '閱讀次數：<span id="busuanzi_value_page_pv">--</span>次';
     }
     metaContainer.appendChild(postViews);
   }
