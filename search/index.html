@@ -183,16 +183,6 @@
         
         
 <li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="">
-    <ion-icon name="pricetags"></ion-icon>
-    
-  </a>
-</li>
-
-
-        
-        
-<li>
   <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="">
     <ion-icon name="archive"></ion-icon>
     
@@ -250,13 +240,6 @@
       
 <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="">
   <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
-</a>
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="">
-  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
 </a>
 
 
@@ -544,7 +527,7 @@ x-data="dreamSearch">
     fuseScript.addEventListener('load', resolve, { once: true });
     fuseScript.addEventListener('error', () => reject(new Error('Could not load Fuse.js')), { once: true });
   });
-  const fuseData = [{"author":null,"avatar":null,"categories":["創作ㄉ心路歷程"],"description":"打招呼、網誌設立原因與接下來的創作計畫","readingTime":1,"tags":["創作","心情"],"title":"《置頂》歡迎來到我的避風港","url":"/posts/top_20261117/"}];
+  const fuseData = [{"author":null,"avatar":null,"categories":["創作ㄉ心路歷程"],"description":"開始創作的心路歷程，先寫下來讓十年後的自己嘲笑XD","readingTime":1,"tags":["創作","心情"],"title":"回歸創作初衷","url":"/posts/20261118/"}];
   const fuseOptions = {
     keys: [
       { name: "title", weight: 0.6 },

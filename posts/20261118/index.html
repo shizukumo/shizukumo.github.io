@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-tw"
+  x-data
+  :class="{ dark: $store.darkMode.isDark(), light: !$store.darkMode.isDark() }"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回歸創作初衷 | 曉雲ㄉ避風港</title>
+
+    
+    
+
+
+
+<link rel="canonical" href="https://shizukumo.github.io/posts/20261118/" />
+
+
+
+
+
+<meta name="author" content="曉雲Shizukumo" />
+<meta name="description" content="開始創作的心路歷程，先寫下來讓十年後的自己嘲笑XD" />
+
+
+<meta name="keywords" content="創作,心情">
+
+
+
+<meta name="generator" content="Hugo 0.170.0">
+
+
+
+
+<meta property="og:url" content="https://shizukumo.github.io/posts/20261118/">
+	<meta property="og:site_name" content="曉雲ㄉ避風港">
+	<meta property="og:title" content="回歸創作初衷">
+	<meta property="og:description" content="開始創作的心路歷程，先寫下來讓十年後的自己嘲笑XD">
+	<meta property="og:locale" content="zh_tw">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-11-18T17:08:00+08:00">
+		<meta property="article:modified_time" content="2026-11-18T17:08:00+08:00">
+		<meta property="article:tag" content="創作">
+		<meta property="article:tag" content="心情">
+		<meta property="og:image" content="https://shizukumo.github.io/posts/20261118/_20261118_173015.jpg">
+
+
+
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://shizukumo.github.io/posts/20261118/_20261118_173015.jpg">
+	<meta name="twitter:title" content="回歸創作初衷">
+	<meta name="twitter:description" content="開始創作的心路歷程，先寫下來讓十年後的自己嘲笑XD">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script>
+      window.lightTheme = 'retro'
+      window.darkTheme = 'forest'
+
+      ;(function() {
+        const isDark = ('hugo-theme-dream-is-dark' in localStorage)
+          ? window.localStorage.getItem('hugo-theme-dream-is-dark') === 'y'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = isDark ? window.darkTheme : window.lightTheme
+
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.classList.add(isDark ? 'dark' : 'light')
+      })()
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.5/dist/cdn.min.js" integrity="sha256-tANunprCL6b2rhuikuAV4fPpyF0Neec+TI65uxObUi4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-2">
+      
+      
+      <button type="button" class="avatar dream-flip-avatar w-12 h-12 shrink-0 rounded-full cursor-pointer"
+        @click="flip = !flip" title="" aria-label="" :aria-pressed="flip">
+      
+        <span class="dream-flip-avatar-face block w-12 h-12 rounded-full overflow-hidden select-none">
+          <img src="/%e5%b0%b7%e5%b0%ac.png" alt="曉雲ㄉ避風港" />
+        </span>
+      
+      </button>
+      
+
+      
+      <div>
+        
+        <a href="/" class="text-lg font-semibold cursor-pointer">
+          曉雲ㄉ避風港
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">只是想心安理得地活著</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+      
+    
+
+    
+      
+    
+      
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-10 shadow-md">
+        
+        
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/about/" target="" title="">
+    
+    <ion-icon name="information-circle"></ion-icon>
+    
+    
+  </a>
+</li>
+
+
+
+
+        
+        
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://www.youtube.com/@shizukumo_art" target="" title="">
+    
+    <ion-icon name="play"></ion-icon>
+    
+    
+  </a>
+</li>
+
+
+
+
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="">
+    <ion-icon name="grid"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+        
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="">
+    <ion-icon name="archive"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+        
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="">
+    <ion-icon name="search"></ion-icon>
+    
+  </a>
+</li>
+
+
+        
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/about/" target="" title="">
+    <ion-icon class="group-hover:text-primary-content" name="information-circle"></ion-icon>
+  </a>
+  
+
+
+
+
+      
+      
+
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://www.youtube.com/@shizukumo_art" target="" title="">
+    <ion-icon class="group-hover:text-primary-content" name="play"></ion-icon>
+  </a>
+  
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front" :inert="flip">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="回歸創作初衷">
+	<meta itemprop="description" content="開始創作的心路歷程，先寫下來讓十年後的自己嘲笑XD">
+	<meta itemprop="datePublished" content="2026-11-18T17:08:00+08:00">
+	<meta itemprop="dateModified" content="2026-11-18T17:08:00+08:00">
+	<meta itemprop="wordCount" content="29">
+	<meta itemprop="image" content="https://shizukumo.github.io/posts/20261118/_20261118_173015.jpg">
+	<meta itemprop="keywords" content="創作,心情">
+
+      
+      <header class="mb-8 not-prose">
+        
+        
+        <div id="custom-article-title-box" class="px-5 py-4 rounded-xl mb-4">
+          <h1 itemprop="headline" class="text-3xl font-bold m-0 text-base-content">回歸創作初衷</h1>
+        </div>
+
+        
+        <div class="flex justify-between items-center text-sm text-base-content/70 px-1 font-normal">
+          <div>
+            
+              <span data-format="luxon">2026-11-18T17:08:00&#43;08:00</span>
+            
+          </div>
+
+          <div class="flex items-center gap-2">
+            
+            
+              <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">曉雲Shizukumo</span>
+  
+  </span>
+</div>
+
+            
+          </div>
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+          <figure>
+            <img class="z-30" src="_20261118_173015.jpg" alt="回歸創作初衷" />
+            
+          </figure>
+        
+
+        <h1 id="熱愛卻放棄">熱愛卻放棄</h1>
+<p>**明明從小就很清楚自己熱愛創作，為什麼遲遲沒有開始？</p>
+<p>我是自然而然就喜歡創作東西的人。</p>
+<p>在還沒接觸到電視與網路的時期，小時候的我很愛用神奇寶貝模型讓他們演故事，小學後在安親班寫功課的動力，是想趕緊在筆記本上塗鴉。
+接觸網路之後開始寫小說，設定角色與世界觀，甚至國中聯絡簿充滿自創小說讓老師困擾。
+學生時期的我，課本上總是滿滿的塗鴉，放學後與朋友在黑板上揮灑畫筆玩樂。</p>
+<p>然而這些好玩、有趣，隨著年齡增長而被壓抑起來。
+也許是生在升學導向風氣盛行的社會當中，大人只知道一條主流的路而不鼓勵藝術。我也就乖乖聽話一路升學、工作，開始習慣唱衰自己沒辦法、自我設限，為了生存打拼慢慢就忘記怎麼畫畫。</p>
+<p>工作幾年，被現實毒打，與焦慮症纏鬥，逐漸忘記了怎麼與自己對話，傾聽內心真實聲音。
+寫作也是，只剩下日記本與自我對話，還有零碎的社群貼文，鮮少創作。</p>
+<h1 id="重拾畫筆的原因">重拾畫筆的原因</h1>
+<p>社畜時期，意外喜歡上了Vtuber(使用虛擬形象的直播主)，成了我重拾畫筆的契機。很幸運地在發布同人圖後收到直播主們的留言鼓勵，於是開始多年的同人創作旅程。
+這時候的生活很單純，上班下班，休假畫畫，畫得不好也不在意，也不會被按讚數字影響，因為只是單純享受畫畫的好玩。
+這時的初衷是單純想要應援喜歡的直播主，雖然沒有累積原創作品，但繪畫技巧、構圖上色等等，都是在這個時候累積的經驗，並且單純的生活環境也對焦慮症的復原有很好的影響。</p>
+<h1 id="下定決心做自己的創作">下定決心做自己的創作</h1>
+<p>穩定的生活持續幾年，身心狀況也漸漸平復，我開始思考為什麼我不做原創呢？明明小時候這麼喜歡創造亂七八糟的東西。
+但是現在的我，到底想要做什麼樣的創作？想要表達什麼東西給世界？想要成為什麼樣的人？
+如果做自己的東西，它們又會是長什麼樣子？</p>
+<p>也許是停止與自己對話太久，且已經習慣在同人世界翻滾，我竟然無法思考該如何開始。
+如果我能將自身經驗與體悟，用自己滿意的方式表達出來就好了。這份心情始終沉澱在心裡。</p>
+<h1 id="如何找尋並回歸創作初衷">如何找尋並回歸創作初衷</h1>
+<p>經過自卑的童年、憂鬱的青少年與焦慮的新鮮人時期，現在的我來到人生的分水嶺。
+思考沉澱後得出的解答，對我來說創作的主要目的，是想將生命中渴望訴說的故事用適合的形式表達出來。<strong>我想要用個人走過的經驗，分享出來讓人借鏡。</strong>
+為了這點，我需要勇氣站到檯面上，去承擔敘事責任。
+所以我才終於下定決心開設頻道與部落格，想要利用新時代的槓桿將自己的產品或理念分享出去。</p>
+<p>對我來說<strong>創作是一種本能</strong>，是將腦袋裡無止境的聲音與畫面想法傾瀉而出，不這麼做的話反而會感到空虛與窒息。
+創作者們都能體會吧，不去表達或創造，會有一種快要爆炸的感覺，感覺有千萬縷思緒在腦袋當中攪和卻打結成一團，你必須要用各種方式讓它們降生於世，不管載體是文字、圖像還是音樂。</p>
+<p>我想這就是人無法停止創作的基本動力吧。
+期許自己莫忘初衷，一步一腳印，踏實地建立起屬於自己，也能讓人感到安心或被理解的避風港。</p>
+
+
+        
+        
+        <div id="custom-post-taxonomies" class="not-prose mt-8 pt-4 border-t border-base-content/10 flex flex-wrap gap-2">
+          
+            <a href="/categories/%E5%89%B5%E4%BD%9C%E3%84%89%E5%BF%83%E8%B7%AF%E6%AD%B7%E7%A8%8B" class="custom-cat-badge text-sm">
+              📁 創作ㄉ心路歷程
+            </a>
+          
+          
+            <a href="/tags/%E5%89%B5%E4%BD%9C" class="custom-tag-badge text-sm">
+              # 創作
+            </a>
+          
+            <a href="/tags/%E5%BF%83%E6%83%85" class="custom-tag-badge text-sm">
+              # 心情
+            </a>
+          
+        </div>
+        
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4">
+        
+        <div></div>
+        
+
+        
+        <div></div>
+        
+      </div>
+      
+
+      
+    </article>
+  </div>
+
+  <div
+    x-data="tocHighlighter()"
+    @scroll.window="debouncedScroll"
+    class="hidden lg:flex lg:flex-col lg:items-end"
+  >
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  
+  <div class="flex flex-col">
+    <div>
+  
+  <p>© 2026 曉雲ㄉ避風港</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  </div>
+
+  
+  <div class="flex items-center gap-6">
+    <div class="flex items-center">
+      <script src="https://counter.hacc.cc/counter.asp?name=ivy0130ivy&dir=1931"></script>
+    </div>
+    <div>
+      <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+    </div>
+  </div>
+</footer>
+          </div>
+        </div>
+        
+        <div class="back" inert :inert="!flip" data-nosnippet>
+          <div class="container">
+            
+              <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">關於 曉雲Shizukumo</div>
+
+        <div class="prose dark:prose-invert">
+          <p>台灣人，2026年底起步的創作者。
+喜歡繪畫與寫作，喜歡獨處與散步，喜歡沉思靜心。
+第一次自行架站，會持續記錄我的創作心得與日常。</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">社群連結</div>
+
+        <div class="prose dark:prose-invert">
+          <p><a href="https://www.youtube.com/@shizukumo_art" target="_blank">曉雲ㄉ創作頻道</a></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex flex-col md:flex-row justify-between items-center gap-4 px-4 py-12">
+
+  
+  <div class="flex flex-col">
+    <div>
+  
+  <p>© 2026 曉雲ㄉ避風港</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  </div>
+
+  
+  <div class="flex items-center gap-6">
+    <div class="flex items-center">
+      <script src="https://counter.hacc.cc/counter.asp?name=ivy0130ivy&dir=1931"></script>
+    </div>
+    <div>
+      <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+    </div>
+  </div>
+</footer>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/luxon@3.7.2/build/global/luxon.min.js"
+  integrity="sha256-UWxf6lyCvfH7XEcrmq/cqc2m3IBrLBLOnWLC4Pw0gQQ="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach((el) => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: 'zh-tw' }).toFormat(
+        'yyyy年MM月dd日',
+      )
+    })
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+<script src="/js/toc.min.js"></script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+      <script src="/js/disable-right-click.js"></script>
+    
+      <script src="/js/theme-color.js"></script>
+    
+
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZE30TGDZY"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GZE30TGDZY');
+        }
+      </script>
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@8.1.0/dist/ionicons/ionicons.esm.js" integrity="sha256-nV54vbcmAakPnygPy6nvhg7LVyKELt7WF3KHWuRBUZo=" crossorigin="anonymous"></script>
+  </body>
+</html>

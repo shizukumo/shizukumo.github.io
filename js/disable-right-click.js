@@ -403,4 +403,13 @@
             document.title = currentTitle.replace('|', '').trim();
         }
     }
+// ==========================================
+        // 8. 強制清除首頁文章卡片底下的閱讀時間與時鐘
+        // ==========================================
+        const cardActions = document.querySelectorAll('.card-actions');
+        cardActions.forEach(action => {
+            if (action.innerHTML.includes('time')) {
+                action.remove();
+            }
+        });
 })();
